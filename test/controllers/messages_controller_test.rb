@@ -1,13 +1,13 @@
 require 'test_helper'
 
-class ComposeControllerTest < ActionDispatch::IntegrationTest
+class MessagesControllerTest < ActionDispatch::IntegrationTest
   test "should get inbox" do
-    get compose_inbox_url
+    get messages_inbox_url
     assert_response :success
   end
 
   test "should get new" do
-    get compose_new_url
+    get messages_new_url
     assert_response :success
   end
 
